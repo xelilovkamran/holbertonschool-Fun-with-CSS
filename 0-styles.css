@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  width: 280px;
+  height: 445px;
+  border: 2px solid #989898;
+  border-radius: 12px;
+  margin: 50px 15px;
+  background-color: #f7f7f7;
+  padding: 26px 0 100px;
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-image: url(./0-sprite.png);
+  background-size: 700px;
+  background-repeat: no-repeat;
+  padding: 20px;
+  margin: 12px 0 0;
+}
+
+.i-html {
+  background-position: left -6% top 25%;
+}
+
+.i-css {
+  background-position: right 50% top 25%;
+}
+
+.i-js {
+  background-position: right -6% top 25%;
+}
