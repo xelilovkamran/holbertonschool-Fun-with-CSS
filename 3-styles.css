@@ -1,0 +1,115 @@
+.menu-open-button {
+  background-color: #c81938;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #951533;
+  border-radius: 999px;
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.menu-open:not(:checked) + .menu-open-button:hover {
+  transform: scale(1.25);
+  transition: 350ms;
+}
+
+.menu-line {
+  background-color: white;
+  width: 15px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu-line-1 {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu-open:checked + .menu-open-button .menu-line-1 {
+  transform: rotate(-45deg);
+  transition: 200ms;
+}
+
+.menu-line-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu-open:checked + .menu-open-button .menu-line-2 {
+  background-color: transparent;
+  border-color: transparent;
+  transition: 200ms;
+}
+
+.menu .menu-open-button .menu-line-3 {
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu-open:checked + .menu-open-button .menu-line-3 {
+  transform: rotate(45deg);
+  transition: 200ms;
+}
+
+.menu-open:checked + .menu-open-button .menu-line {
+  top: 50%;
+  left: 31.5%;
+}
+
+.menu-item {
+  color: white;
+  text-align: center;
+  background-color: #c81938;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #951533;
+  border-radius: 999px;
+  position: absolute;
+  transition: 200ms;
+}
+
+.menu .menu-item:hover {
+  color: #c81938;
+  background-color: white;
+}
+
+.menu-open:checked ~ .menu-item:nth-child(3) {
+  transform: translateY(50px);
+}
+
+.menu-open:checked ~ .menu-item:nth-child(4) {
+  transform: translateY(100px);
+}
+
+.menu-open:checked ~ .menu-item:nth-child(5) {
+  transform: translateY(150px);
+}
+
+.menu-open:checked ~ .menu-item:nth-child(6) {
+  transform: translateY(200px);
+}
+
+.menu-open:checked ~ .menu-item:nth-child(7) {
+  transform: translateY(250px);
+}
+
+i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu .menu-open {
+  display: none;
+}
